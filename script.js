@@ -1,7 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 
-// ===== ГОД =====
 const YEAR = process.argv[2];
 
 if (!YEAR) {
@@ -9,15 +8,12 @@ if (!YEAR) {
     process.exit(1);
 }
 
-// ===== ПУТИ =====
 const SEASON_DIR = path.join("games", `season-${YEAR}`);
 const JSON_PATH = path.join("data", "GamesData", `games-${YEAR}.json`);
 const IMAGE_OUTPUT_DIR = path.join("src", "images", YEAR);
 
-// создаём папку под картинки
 fs.mkdirSync(IMAGE_OUTPUT_DIR, { recursive: true });
 
-// ===== ЧИТАЕМ JSON =====
 let existingGames = [];
 
 if (fs.existsSync(JSON_PATH)) {
@@ -29,10 +25,8 @@ if (fs.existsSync(JSON_PATH)) {
     }
 }
 
-// чтобы не было дублей
 const existingLinks = new Set(existingGames.map(g => g.link));
 
-// ===== ЧИТАЕМ ПАПКИ =====
 const folders = fs.readdirSync(SEASON_DIR, { withFileTypes: true })
     .filter(d => d.isDirectory())
     .map(d => d.name);
@@ -48,12 +42,10 @@ folders.forEach(folder => {
 
     const link = `../../games/season-${YEAR}/${folder}/index.html`;
 
-    // если уже есть — пропускаем
     if (existingLinks.has(link)) return;
 
     const files = fs.readdirSync(gameFolder);
 
-    // ===== ИЩЕМ preview =====
     const previewFile = files.find(f =>
         f.toLowerCase().startsWith("preview.")
     );
@@ -62,17 +54,14 @@ folders.forEach(folder => {
 
     const previewPath = path.join(gameFolder, previewFile);
 
-    // ===== УНИКАЛЬНОЕ ИМЯ КАРТИНКИ =====
     const ext = path.extname(previewFile);
     const imageName = `${folder}${ext}`;
     const targetImagePath = path.join(IMAGE_OUTPUT_DIR, imageName);
 
-    // ===== ПЕРЕМЕЩАЕМ preview =====
     if (!fs.existsSync(targetImagePath)) {
         fs.renameSync(previewPath, targetImagePath);
     }
 
-    // ===== ЧИТАЕМ TITLE =====
     let gameName = "Unknown Game";
 
     try {
@@ -96,13 +85,10 @@ folders.forEach(folder => {
 
 });
 
-// ===== ОБЪЕДИНЯЕМ =====
 const allGames = [...existingGames, ...newGames];
 
-// сортировка
 allGames.sort((a, b) => a.gameName.localeCompare(b.gameName));
 
-// ===== СОХРАНЯЕМ =====
 fs.writeFileSync(JSON_PATH, JSON.stringify(allGames, null, 2));
 
 console.log(`✔ Added ${newGames.length} new games`);

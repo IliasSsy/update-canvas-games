@@ -1,0 +1,16 @@
+[
+  {
+    "author": "Shirokova Sofia",
+    "gameName": "Mouse and Cheese",
+    "imageSrc": "../../src/images/2022/Shirokova_Sofia.png",
+    "altText": "Shirokova_Sofia",
+    "link": "../../games/season-2022/Shirokova_Sofia/index.html"
+  },
+  {
+    "author": "Poskryakov Nikita",
+    "gameName": "My game",
+    "imageSrc": "../../src/images/2022/Poskryakov_Nikita.png",
+    "altText": "Poskryakov_Nikita",
+    "link": "../../games/season-2022/Poskryakov_Nikita/index.html"
+  }
+]

@@ -18,14 +18,14 @@
     "gameName": "Freedom cactus",
     "imageSrc": "../../src/images/2021/krasilnikov30-min.png",
     "altText": "freedom_cactus",
-    "link": "../../games/season-2021/Krasilnikov_Bogdan/index.html"
+    "link": "../games/season-2021/Krasilnikov_Bogdan/index.html"
   },
   {
     "author": "Каракулов Даниил",
     "gameName": "Тетрис",
     "imageSrc": "../../src/images/2021/tetris-min.png",
     "altText": "tetris",
-    "link": "../../games/season-2021/Karakulov_Daniil/index.html"
+    "link": "../games/season-2021/Karakulov_Daniil/index.html"
   },
   {
     "author": "Ершов Глеб",

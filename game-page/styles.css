@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.page {
+    position: relative;
+    min-height: 100vh;
+    cursor: url("../src/cursors/cursor.png") 0 0, auto;
+    background-image: url("images/game_page-background.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+    background-color: #1eaac3;
+}
+
+.page__image-return {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    left: 20px;
+    z-index: 50;
+}
+
+a {
+    cursor: url("../src/cursors/pointer.png") 0 0, pointer;
+}
+
+.game-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.game-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.game-container iframe.loaded {
+    opacity: 1;
+}
+
+/* затемнение (теперь ниже iframe) */
+.fade-overlay {
+    position: fixed;
+    inset: 0;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+
+    z-index: 1; /* ниже iframe */
+}
+
+.page__return-button {
+    z-index: 50;
+}
+.fade-overlay.active {
+    opacity: 0.6;
+}
+
+.game-container {
+    position: relative;
+    z-index: 2; /* выше overlay */
+}
+
+.game-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.game-container iframe.loaded {
+    opacity: 1;
+}

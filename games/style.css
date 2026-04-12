@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'comic sans';
+    src: url('../fonts/comic_sans_ms_pixel_rus_eng.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PixelifySans';
+    src: url('../fonts/PixelifySans-VariableFont_wght.ttf') format('truetype');
+}
+
+
+a {
+    text-decoration: none;
+    cursor: url("../src/cursors/pointer.png") 0 0, pointer;
+}
+
+body {
+    background-image: url('img/background.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100vw 100vh;
+    background-attachment: scroll;
+    background-color: #2F3337;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 200px;
+    cursor: url("../src/cursors/cursor.png") 0 0, auto;
+}
+
+h1 {
+    margin-top: 150px;
+    text-align: center;
+    font: 200px/213px 'comic sans', Arial, sans-serif;
+    color: #FF603D;
+    font-size: 12vw;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000,
+            1px 1px 0 #330000,
+            2px 2px 0 #330000,
+            3px 3px 0 #330000,
+            4px 4px 0 #330000,
+            5px 5px 0 #330000,
+            6px 6px 0 #330000,
+            7px 7px 0 #000;
+}
+
+.back_button {
+    position: absolute;
+    top: 61px;
+    left: 61px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.game_field {
+    min-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 239px;
+    border-bottom: 3px solid #FFFFFF;
+    font: 40px/30px 'PixelifySans', sans-serif;
+    color: #FFFFFF;
+}
+
+.game_field a {
+    width: 164px;
+    height: 67px;
+    color: #FFFFFF;
+    background-color: #FF603D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}

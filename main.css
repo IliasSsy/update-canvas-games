@@ -7,18 +7,18 @@
 
 @font-face {
     font-family: 'comic sans';
-    src: url('../fonts/comic_sans_ms_pixel_rus_eng.ttf') format('truetype');
+    src: url('/fonts/comic_sans_ms_pixel_rus_eng.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'tiny5';
-    src: url('../fonts/tiny5_regular.ttf') format('truetype');
+    src: url('/fonts/tiny5_regular.ttf') format('truetype');
 }
 
 
 a {
     text-decoration: none;
-    cursor: url("../src/cursors/pointer.png") 0 0, pointer;
+    cursor: url("/src/cursors/pointer.png") 0 0, pointer;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
     align-items: center;
     min-height: 100vh;
     gap: 200px;
-    cursor: url("../src/cursors/cursor.png") 0 0, auto;
+    cursor: url("/src/cursors/cursor.png") 0 0, auto;
 }
 
 .logo {

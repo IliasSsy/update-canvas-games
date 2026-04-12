@@ -40,7 +40,7 @@ folders.forEach(folder => {
 
     if (!fs.existsSync(indexPath)) return;
 
-    const link = `../../games/season-${YEAR}/${folder}/index.html`;
+    const link = `../games/season-${YEAR}/${folder}/index.html`;
 
     if (existingLinks.has(link)) return;
 

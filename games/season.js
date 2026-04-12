@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const year = match[1];
 
-    const jsonPath = `/data/GamesData/games-${year}.json`;
+    const jsonPath = `../../data/GamesData/games-${year}.json`;
 
     const list = document.getElementById("games-list");
     const title = document.getElementById("title");

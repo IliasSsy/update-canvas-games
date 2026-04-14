@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const html = games.map(game => {
             return `
-                <div class="game_field">
+                <div class="game-field">
                     <img src="${game.imageSrc}" alt="${game.altText}" width="200" height="200">
 
                     <div class="info">

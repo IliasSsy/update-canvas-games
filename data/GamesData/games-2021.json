@@ -1,0 +1,16 @@
+[
+  {
+    "author": "Krasilnikov Bogdan",
+    "gameName": "Freedomcactus",
+    "imageSrc": "../../src/images/2021/Krasilnikov_Bogdan.webp",
+    "altText": "Krasilnikov_Bogdan",
+    "link": "../games/season-2021/Krasilnikov_Bogdan/index.html"
+  },
+  {
+    "author": "Karakulov Daniil",
+    "gameName": "Tetris",
+    "imageSrc": "../../src/images/2021/Karakulov_Daniil.webp",
+    "altText": "Karakulov_Daniil",
+    "link": "../games/season-2021/Karakulov_Daniil/index.html"
+  }
+]

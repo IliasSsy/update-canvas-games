@@ -82,12 +82,5 @@
     "imageSrc": "../../src/images/2025/aero_hockey.webp",
     "altText": "aero_hockey",
     "link": "../games/season-2025/Kolupaev_Ivan/index.html"
-  },
-  {
-    "author": "Poskryakov Nikita",
-    "gameName": "Default",
-    "imageSrc": "../../src/images/2026/default.webp",
-    "altText": "Default",
-    "link": "../games/season-2025/Poskryakov_Nikita/index.html"
   }
 ]

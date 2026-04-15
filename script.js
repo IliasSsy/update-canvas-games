@@ -8,6 +8,7 @@ if (!YEAR) {
     process.exit(1);
 }
 
+
 const SEASON_DIR = path.join("games", `season-${YEAR}`);
 const JSON_PATH = path.join("data", "GamesData", `games-${YEAR}.json`);
 const IMAGE_OUTPUT_DIR = path.join("src", "images", YEAR);
@@ -70,7 +71,9 @@ folders.forEach(folder => {
         if (match && match[1]) {
             gameName = match[1].trim();
         }
-    } catch {}
+    } catch (err) {
+        console.warn("Не удалось прочитать title:", err.message)
+    }
 
     const author = folder.replace(/_/g, " ");
     const altText = imageName.replace(/\.[^/.]+$/, "");

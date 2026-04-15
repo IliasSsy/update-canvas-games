@@ -2,7 +2,7 @@
   {
     "author": "Татьянина Мария",
     "gameName": "Terius",
-    "imageSrc": "../src/images/2021/terius-min.webp",
+    "imageSrc": "../../src/images/2021/terius-min.webp",
     "altText": "terius",
     "link": "https://guzhiwo.github.io/"
   },

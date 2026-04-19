@@ -22,21 +22,21 @@
   },
   {
     "author": "Рудаков Тимофей",
-    "gameName": "THE DICE",
+    "gameName": "The Dice",
     "imageSrc": "../../src/images/2025/dice.webp",
     "altText": "dice",
     "link": "../games/season-2025/Rudakov_Timofey/index.html"
   },
   {
     "author": "Хохлова Алёна",
-    "gameName": "Новый Flappy Bird",
+    "gameName": "Flappy Bird 2.0",
     "imageSrc": "../../src/images/2025/fb.webp",
     "altText": "fb",
     "link": "../games/season-2025/Hohlova_Alena/index.html"
   },
   {
     "author": "Широкова Софья",
-    "gameName": "Mouse and cheese",
+    "gameName": "Mouse and Cheese",
     "imageSrc": "../../src/images/2025/mouse_and_cheese.webp",
     "altText": "mouse_and_cheese",
     "link": "../games/season-2025/Shirokova_Sofia/index.html"

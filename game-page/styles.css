@@ -10,8 +10,11 @@ html, body {
 }
 
 .page {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
+    position: relative;
     cursor: url("../src/cursors/cursor.png") 0 0, auto;
     background-image: url("images/game_page-background.png");
     background-repeat: no-repeat;
@@ -32,6 +35,9 @@ a {
 }
 
 .game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
 }

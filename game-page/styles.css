@@ -69,9 +69,10 @@ a {
 }
 
 .game-container iframe {
-    width: 960px;
+    width: 800px;
     height: 600px;
-    border: none;
+    transform: scale(0.9);
+    transform-origin: center;
 
     opacity: 0;
     transition: opacity 0.8s ease;

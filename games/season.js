@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const jsonPath = `../../data/GamesData/games-${year}.json`;
 
     const list = document.getElementById("games-list");
+    console.log(list)
     const title = document.getElementById("title");
 
     if (!list) {

@@ -69,7 +69,3 @@ a {
     opacity: 0;
     transition: opacity 0.8s ease;
 }
-
-.game-container iframe.loaded {
-    opacity: 1;
-}

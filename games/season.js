@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(games => {
-            renderGames(games);
+            renderGames(games, list);
         })
         .catch(error => {
             console.error(error);

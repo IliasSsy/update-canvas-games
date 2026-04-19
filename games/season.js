@@ -40,16 +40,17 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error(error);
             list.innerHTML = "<p>Не удалось загрузить игры</p>";
         });
+});
 
-    function renderGames(games) {
+function renderGames(games, list) {
 
-        if (!Array.isArray(games) || games.length === 0) {
-            list.innerHTML = "<p>Нет игр для этого сезона</p>";
-            return;
-        }
+    if (!Array.isArray(games) || games.length === 0) {
+        list.innerHTML = "<p>Нет игр для этого сезона</p>";
+        return;
+    }
 
-        const html = games.map(game => {
-            return `
+    const html = games.map(game => {
+        return `
                 <div class="game-field">
                     <img src="${game.imageSrc}" alt="${game.altText}" width="200" height="200">
 
@@ -63,9 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </a>
                 </div>
             `;
-        }).join("");
+    }).join("");
 
-        list.innerHTML = html;
-    }
-
-});
+    list.innerHTML = html;
+}
